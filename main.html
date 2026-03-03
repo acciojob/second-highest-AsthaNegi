@@ -31,8 +31,12 @@
 		}
 
 		function Main() {
-			
-			secondHighest(arr);
+			let n = prompt("Enter the number of elements");
+			let arr = [];
+			for(let i=0; i<n; i++) {
+				arr[i] = prompt("Enter element " + (i+1));
+			}
+			alert(secondHighest(arr));
 		}
 		Main();
 	</script>
